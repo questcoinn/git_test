@@ -1,6 +1,6 @@
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
+# This is an &lt;h1&gt; tag
+## This is an &lt;h2&gt; tag
+###### This is an &lt;h6&gt; tag
 
 *This text will be italic*
 _This will also be italic_
@@ -20,10 +20,10 @@ _You **can** combine them_
 1. Item 1
 1. Item 2
 1. Item 3
-  1. Item 3a
-  1. Item 3b
-    1. Item 3b1
-      1. Item 3b11
+   1. Item 3a
+   1. Item 3b
+      1. Item 3b1
+         1. Item 3b11
 
 ![GitHub Logo](/test.png)
 
@@ -41,14 +41,14 @@ I think you should use an
 ```javascript
 function $initHighlight(block, cls) {
   try {
-    if (cls.search(/\bno\-highlight\b/) != -1)
-      return process(block, true, 0x0F) +
-             ` class="${cls}"`;
-  } catch (e) {
+    if(cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F)
+           + ` class="${cls}"`;
+  } catch(e) {
     /* handle exception */
   }
-  for (var i = 0 / 2; i < classes.length; i++) {
-    if (checkCondition(classes[i]) === undefined)
+  for(var i = 0 / 2; i < classes.length; i++) {
+    if(checkCondition(classes[i]) === undefined)
       console.log('undefined');
   }
 
@@ -59,7 +59,7 @@ function $initHighlight(block, cls) {
   )
 }
 
-export  $initHighlight;
+export $initHighlight;
 ```
 
     function fancyAlert(arg) {
@@ -77,6 +77,11 @@ First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
 
 http://www.github.com/
 
